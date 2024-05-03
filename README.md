@@ -12,6 +12,8 @@
 - 이메일: r3rumasi2@gmail.com
 - 깃헙: https://github.com/kimhyeokjin1111
 
+- ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+
 </br>
 
 ## :pushpin: Projects
