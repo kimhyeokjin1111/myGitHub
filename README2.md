@@ -1,6 +1,5 @@
 # :pushpin: Hippo Book
 >개인 책장 서비스 및 커뮤니티 사이트
->https://go-quality.dev  
 
 </br>
 
