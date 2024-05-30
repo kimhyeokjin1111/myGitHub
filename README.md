@@ -23,11 +23,11 @@
 
 ## :pushpin: Projects
 ### 1. [hippoBook](https://github.com/Integerous/goQuality)
->소유도서 관리 서비스  (팀 프로젝트)  
+>개인 책장 및 커뮤니티 사이트 (팀 프로젝트)  
 >개발 기간: 2024.4.21 ~ 2024.5.30 
 >  
 >기술 스택:  
 >Java 17 / Spring Boot / JSP / html / Javascript
 >Oracle / MyBatis
 >  
->[프로젝트 상세 설명](https://github.com/Integerous/goQuality) 참고
+>[프로젝트 상세 설명]([https://github.com/Integerous/goQuality](https://github.com/kimhyeokjin1111/myGitHub/edit/main/README2.md)) 참고
