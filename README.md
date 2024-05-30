@@ -30,4 +30,4 @@
 >Java 17 / Spring Boot / JSP / html / Javascript
 >Oracle / MyBatis
 >  
->[프로젝트 상세 설명]([https://github.com/Integerous/goQuality](https://github.com/kimhyeokjin1111/myGitHub/edit/main/README2.md)) 참고
+>[프로젝트 상세 설명](https://github.com/kimhyeokjin1111/myGitHub/edit/main/README2.md) 참고
