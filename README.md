@@ -36,7 +36,7 @@
 
 ## :pushpin: Projects
 ### 1. [hippoBook](https://github.com/Integerous/goQuality)
->개인 책장 및 커뮤니티 사이트 (팀 프로젝트)  
+>개인 책장 서비스 및 커뮤니티 사이트 (팀 프로젝트)  
 >개발 기간: 2024.4.21 ~ 2024.5.30 
 >  
 >기술 스택:  
