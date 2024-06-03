@@ -1,4 +1,4 @@
-## profile
+## :pushpin: profile
 
 - 이름: 김혁진
 - 1999.11.11 출생
