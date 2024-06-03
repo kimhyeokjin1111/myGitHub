@@ -6,6 +6,7 @@
 - Email: r3rumasi2@gmail.com
 - GitHub: [github.com/kimhyeokjin1111](https://github.com/kimhyeokjin1111)
 </br>
+
 - 한경대학교 졸업(2018.03~2024.02)
 - 경동고등학교 졸업(2015.03~2018.02)
 
