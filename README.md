@@ -67,7 +67,7 @@
 </br>
 
 ## 3. ERD 설계
-![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/final_erd.png)
+![OpenAiApi drawio](https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/78f131bf-120d-4d00-aa66-f7e50a39f6b0)
 
 ## 4. 핵심 기능(OpenAi API)
 해당 사이트에 대해 답변해줄 수 있는 챗봇입니다. 
