@@ -70,10 +70,9 @@
 ![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/final_erd.png)
 
 ## 4. 핵심 기능(OpenAi API)
-해당 사이트에 대해 답변해줄 수 있는 챗봇  
-OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해준다.
+해당 사이트에 대해 답변해줄 수 있는 챗봇입니다. 
+OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다.
 
-<details>
 <summary><b>핵심 기능 설명 펼치기</b></summary>
 <div markdown="1">
 
@@ -130,7 +129,6 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해준다.
   - 저장된 컨텐츠는 다시 Repository - Service - Controller를 거쳐 화면단에 송출됩니다.
 
 </div>
-</details>
 
 </br>
 
