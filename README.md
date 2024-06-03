@@ -3,7 +3,7 @@
 
 </br>
 
-## :pushpin: Intro
+## :pushpin: attitude
 ```
 여러 방법을 적용할 수 있는 유연한 사고를 가진 개발자가 되겠습니다.
 ```
