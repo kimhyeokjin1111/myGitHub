@@ -1,5 +1,5 @@
 ## 소개
-![프로필이미지](![KakaoTalk_20240420_101327644](https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/92d15f29-f041-45ff-b238-788567754578))
+![KakaoTalk_20240420_101327644](https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/60fc65a8-7135-4a94-a770-9a2d1f781b54)
 - 이름: 김혁진
 - phone: 010-9406-3580
 - Email: r3rumasi2@gmail.com
