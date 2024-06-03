@@ -48,9 +48,6 @@
 >기술 스택:  
 >Java 17 / Spring Boot / JSP / html / Javascript
 >Oracle / MyBatis
->  
->[프로젝트 상세 설명](README2.md) 참고
->
 
 </br>
 
