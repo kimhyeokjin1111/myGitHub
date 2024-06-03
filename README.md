@@ -1,5 +1,9 @@
-# 소개
-
+## 소개
+![프로필이미지](https://github.com/JSpiner/RESUME/raw/master/images/profile.jpeg)
+- 이름: 김혁진
+- phone: 010-9406-3580
+- Email: r3rumasi2@gmail.com
+- GitHub: [github.com/kimhyeokjin1111](https://github.com/kimhyeokjin1111)
 
 </br>
 
@@ -27,12 +31,6 @@
 <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
 <img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">
-
-</br>
-
-## :pushpin: Contact
-- 이메일: r3rumasi2@gmail.com
-- 깃헙: https://github.com/kimhyeokjin1111
 
 </br>
 
