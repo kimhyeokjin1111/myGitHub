@@ -45,8 +45,9 @@
 >  
 >[프로젝트 상세 설명](README2.md) 참고
 >
-># :pushpin: Hippo Book
->개인 책장 서비스 및 커뮤니티 사이트
+
+## :pushpin: Hippo Book
+개인 책장 서비스 및 커뮤니티 사이트
 
 </br>
 
