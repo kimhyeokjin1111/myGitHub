@@ -1,5 +1,5 @@
 ## 소개
-![프로필이미지](https://github.com/JSpiner/RESUME/raw/master/images/profile.jpeg)
+![프로필이미지](![KakaoTalk_20240420_101327644](https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/92d15f29-f041-45ff-b238-788567754578))
 - 이름: 김혁진
 - phone: 010-9406-3580
 - Email: r3rumasi2@gmail.com
