@@ -1,4 +1,4 @@
-## :pushpin: profile
+## :pushpin: 프로필
 
 - 이름: 김혁진
 - 1999.11.11 출생
@@ -20,7 +20,7 @@
 
 </br>
 
-## :pushpin: Stack
+## :pushpin: 스택
 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
@@ -30,7 +30,7 @@
 
 </br>
 
-## :pushpin: Tool
+## :pushpin: 툴
 
 <img src="https://img.shields.io/badge/eclipseide-2C2255?style=for-the-badge&logo=eclipseide&logoColor=white">
 <img src="https://img.shields.io/badge/intellijidea-000000?style=for-the-badge&logo=intellijidea&logoColor=white">
@@ -40,7 +40,7 @@
 
 </br>
 
-## :pushpin: Projects
+## :pushpin: 프로젝트
 ### 1. [hippoBook](https://github.com/Integerous/goQuality)
 >개인 책장 서비스 및 커뮤니티 사이트 (팀 프로젝트)  
 >개발 기간: 2024.4.21 ~ 2024.5.30 
