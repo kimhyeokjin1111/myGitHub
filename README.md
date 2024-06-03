@@ -71,7 +71,7 @@
   <img src="https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/78f131bf-120d-4d00-aa66-f7e50a39f6b0">
 </p>
 
-## 4. 핵심 기능(OpenAi API)
+## 4. 주요 기능(OpenAi API)
 해당 사이트에 대해 답변해줄 수 있는 챗봇입니다. 
 OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다.
 
