@@ -71,16 +71,18 @@
   <img src="https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/78f131bf-120d-4d00-aa66-f7e50a39f6b0">
 </p>
 
-## 4. 주요 기능(OpenAi API)
+## 4. 주요 기능
+
+### 4.1. (OpenAi API)
 해당 사이트에 대해 답변해줄 수 있는 챗봇입니다. 
 OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다.
 
-### 4.1. 전체 흐름
+### 4.1.1. 전체 흐름
 <p align="center">
   <img src="https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/78f131bf-120d-4d00-aa66-f7e50a39f6b0">
 </p>
 
-### 4.2. 사용자 요청
+### 4.1.2. 사용자 요청
 
 - **Session "userId" 체크** :pushpin: [코드 확인](src/main/resources/templates/chatbot/chatbot.html)
   - 화면단에서 th:if를 이용해 session.userId이 null인지 확인합니다.
@@ -96,7 +98,7 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
   - 사용자의 채팅를 POST방식으로 비동기 요청을 날립니다.  
     [chatbot.js 코드 확인](src/main/resources/static/js/chatbot/chatbot.js)
  
-### 4.3. Controller
+### 4.1.3. RestController
 
 ![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_controller.png)
 
@@ -106,7 +108,7 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
 - **결과 응답** :pushpin: [코드 확인]()
   - Service 계층에서 넘어온 로직 처리 결과(메세지)를 화면단에 응답해줍니다.
 
-### 4.4. Service
+### 4.1.4. Service
 
 ![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_service1.png)
 
@@ -127,7 +129,7 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
   - 컨텐츠에 이미지가 없을 경우, 미리 설정해둔 기본 이미지를 사용하고, 제목이 없을 경우 생략합니다.
 
 
-### 4.5. Repository
+### 4.1.5. Repository
 
 ![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_repo.png)
 
@@ -140,29 +142,32 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
 </br>
 
 
-## 4. 핵심 기능
-이 서비스의 핵심 기능은 컨텐츠 등록 기능입니다.  
-사용자는 단지 컨텐츠의 카테고리를 선택하고, URL만 입력하면 끝입니다.  
-이 단순한 기능의 흐름을 보면, 서비스가 어떻게 동작하는지 알 수 있습니다.  
+### 4.1. (OpenAi API)
+해당 사이트에 대해 답변해줄 수 있는 챗봇입니다. 
+OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다.
 
-<details>
-<summary><b>핵심 기능 설명 펼치기</b></summary>
-<div markdown="1">
+### 4.1.1. 전체 흐름
+<p align="center">
+  <img src="https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/78f131bf-120d-4d00-aa66-f7e50a39f6b0">
+</p>
 
-### 4.1. 전체 흐름
-![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow1.png)
+### 4.1.2. 사용자 요청
 
-### 4.2. 사용자 요청
-![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_vue.png)
+- **Session "userId" 체크** :pushpin: [코드 확인](src/main/resources/templates/chatbot/chatbot.html)
+  - 화면단에서 th:if를 이용해 session.userId이 null인지 확인합니다.
+  - null이라면 모달버튼을 생성하지 않습니다.
+```html
+<div th:fragment="chatbot-box" class="chatbot-icon-box" th:if="${session.userId != null}">
+  </div>
+```
 
-- **URL 정규식 체크** :pushpin: [코드 확인](https://github.com/Integerous/goQuality/blob/b587bbff4dce02e3bec4f4787151a9b6fa326319/frontend/src/components/PostInput.vue#L67)
-  - Vue.js로 렌더링된 화면단에서, 사용자가 등록을 시도한 URL의 모양새를 정규식으로 확인합니다.
-  - URL의 모양새가 아닌 경우, 에러 메세지를 띄웁니다.
-
-- **Axios 비동기 요청** :pushpin: [코드 확인]()
-  - URL의 모양새인 경우, 컨텐츠를 등록하는 POST 요청을 비동기로 날립니다.
+- **Fetch 비동기 요청** :pushpin: 
+  - 요청 보냈을 때 채팅이 url상에 노출되는 점과 채팅에 특수문자가 있는 경우 데이터가 손상되는 점
+  - REST단에서 채팅에 대한 OpenAi의 답변을 받고 이를 데이터베이스에 INSERT처리를 하는 점을 고려해 POST방식으로 명시해 줍니다.
+  - 사용자의 채팅를 POST방식으로 비동기 요청을 날립니다.  
+    [chatbot.js 코드 확인](src/main/resources/static/js/chatbot/chatbot.js)
  
-### 4.3. Controller
+### 4.1.3. RestController
 
 ![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_controller.png)
 
@@ -172,7 +177,7 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
 - **결과 응답** :pushpin: [코드 확인]()
   - Service 계층에서 넘어온 로직 처리 결과(메세지)를 화면단에 응답해줍니다.
 
-### 4.4. Service
+### 4.1.4. Service
 
 ![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_service1.png)
 
@@ -193,7 +198,7 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
   - 컨텐츠에 이미지가 없을 경우, 미리 설정해둔 기본 이미지를 사용하고, 제목이 없을 경우 생략합니다.
 
 
-### 4.5. Repository
+### 4.1.5. Repository
 
 ![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_repo.png)
 
@@ -202,7 +207,6 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
   - 저장된 컨텐츠는 다시 Repository - Service - Controller를 거쳐 화면단에 송출됩니다.
 
 </div>
-</details>
 
 </br>
 
