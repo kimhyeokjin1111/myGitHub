@@ -89,13 +89,13 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
 
 ### 4.1.2. 사용자 요청
 
-- **Session userId 체크** :pushpin: 
+- **Session userId 체크** 
   - 화면단에서 th:if를 이용해 session.userId이 null인지 확인합니다.
   - null이라면 모달버튼을 생성하지 않습니다.
     
 [chatbot.html 코드 확인](src/main/resources/templates/chatbot/chatbot.html)
 
-- **Fetch 비동기 요청** :pushpin: 
+- **Fetch 비동기 요청** 
   - 사용자의 채팅를 POST방식으로 비동기 요청을 날립니다.
   - (요청 보냈을 때 채팅이 url상에 노출되는 점과 채팅에 특수문자가 있는 경우 데이터가 손상되는 점  
     REST단에서 채팅에 대한 OpenAi의 답변을 받고 이를 데이터베이스에 INSERT처리를 하는 점을 고려해 POST방식으로 명시해주었습니다.)
@@ -104,32 +104,32 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
  
 ### 4.1.3. RestController
 
-- **요청 처리** :pushpin: 
+- **요청 처리** 
   - RestController에서는 화면단에서 넘어온 요청(채팅)을 받고, Service 계층에서 로직 처리를 넘깁니다.
 
-- **결과 응답** :pushpin: 
+- **결과 응답** 
   - Service 계층에서 넘어온 로직 처리 결과(OpenAi의 답변)를 화면단에 응답해줍니다.
  
 [ChatbotApi.java 코드 확인](src/main/java/com/example/hippobookproject/api/chatbot/ChatbotApi.java)
 
 ### 4.1.4. Service
 
-- **과거 채팅 내역 불러오기** :pushpin:
+- **과거 채팅 내역 불러오기** 
   - 데이터베이스단에서 채팅 내역을 받아옵니다.
   - OpenApi API 요청body의 message에 과거 채팅 내역을 추가해줍니다.
 
-- **OpenAi API endpoint로 웹 통신** :pushpin:
+- **OpenAi API endpoint로 웹 통신** 
   - WebClient 만들어진 body를 endpoint에 요청해줍니다.
   - 공식사이트에 명시된대로 POST방식을 사용해주고 response 1개의 값을 리턴받기 위해 bodyToMono로 사용하였습니다.
 
-- **채팅 내역 저장하기** :pushpin: 
+- **채팅 내역 저장하기** 
   - 사용자 채팅과 api통신의 response의 컨텐츠에 접근하여 답변을 데이터베이스단에 전달합니다.  
 
 [ChatbotService.java 코드 확인](src/main/java/com/example/hippobookproject/service/chatbot/ChatbotService.java)
 
 ### 4.1.5. Database
 
-- **채팅 내역 검색 및 저장** :pushpin:
+- **채팅 내역 검색 및 저장**
   - session.userId와 일치하는 사용자 채팅 내역을 읽어 service단으로 넘깁니다.
   - service단에서 넘어온 채팅 내역을 데이터베이스에 저장합니다.
 
