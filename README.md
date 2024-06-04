@@ -81,7 +81,6 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
 </p>
 
 ### 4.2. 사용자 요청
-![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_vue.png)
 
 - **Session "userId" 체크** :pushpin: [코드 확인](src/main/resources/templates/chatbot/chatbot.html)
   - 화면단에서 th:if를 이용해 session.userId이 null인지 확인합니다.
