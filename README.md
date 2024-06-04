@@ -84,7 +84,7 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
 
 ### 4.1.2. 사용자 요청
 
-- **Session "userId" 체크** :pushpin: 
+- **Session userId 체크** :pushpin: 
   - 화면단에서 th:if를 이용해 session.userId이 null인지 확인합니다.
   - null이라면 모달버튼을 생성하지 않습니다.
     
@@ -116,26 +116,22 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
 ### 4.1.4. Service
 
 - **과거 채팅 내역 불러오기** :pushpin:
-  - 사용자가 채팅한 내역을 데이터베이스로부터 SELECT 해옵니다.
-  - OpenApi API 요청 body의 message에 과거 채팅 내역을 추가해줍니다.
+  - 데이터베이스단에서 채팅 내역을 받아옵니다.
+  - OpenApi API 요청body의 message에 과거 채팅 내역을 추가해줍니다.
 
 - **OpenAi API endpoint로 웹 통신** :pushpin:
   - WebClient 만들어진 body를 endpoint에 요청해줍니다.
-  - 공식사이트에 명시된대로 POST방식을 사용해주고 response 1개의 값을 리턴받기 위해 bodyToMono로 사용합니다.
+  - 공식사이트에 명시된대로 POST방식을 사용해주고 response 1개의 값을 리턴받기 위해 bodyToMono로 사용하였습니다.
 
 - **채팅 내역 저장하기** :pushpin: 
-  - URL 접속 확인결과 유효하면 Jsoup을 사용해서 입력된 URL의 이미지와 제목을 파싱합니다.
-  - 이미지는 Open Graphic Tag를 우선적으로 파싱하고, 없을 경우 첫 번째 이미지와 제목을 파싱합니다.
-  - 컨텐츠에 이미지가 없을 경우, 미리 설정해둔 기본 이미지를 사용하고, 제목이 없을 경우 생략합니다.
+  - 사용자 채팅과 api통신의 response의 컨텐츠에 접근하여 답변을 데이터베이스단에 전달합니다.
 
 
 ### 4.1.5. Repository
 
-![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_repo.png)
-
-- **컨텐츠 저장** :pushpin: [코드 확인]()
-  - URL 유효성 체크와 이미지, 제목 파싱이 끝난 컨텐츠는 DB에 저장합니다.
-  - 저장된 컨텐츠는 다시 Repository - Service - Controller를 거쳐 화면단에 송출됩니다.
+- **채팅 내역 검색 및 저장** :pushpin:
+  - session.userId와 일치하는 사용자 채팅 내역을 읽어 service단으로 넘깁니다.
+  - service단에서 넘어온 채팅 내역을 데이터베이스에 저장합니다.
 
 </div>
 
