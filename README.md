@@ -90,7 +90,7 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
     
 <p align="center">
   <img src="https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/d00a303b-f3d8-4cf9-be7a-c74474197e2d" width=200 margin-right=10>
-  <img src="https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/d00a303b-f3d8-4cf9-be7a-c74474197e2d" width=200>
+  <img src="https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/6f2142c8-9ef8-4878-9e2c-f50a77a1bf7b" width=200>
 </p>
     
 [chatbot.html 코드 확인](src/main/resources/templates/chatbot/chatbot.html)
