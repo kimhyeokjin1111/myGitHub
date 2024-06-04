@@ -96,12 +96,10 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
 - **Fetch 비동기 요청** :pushpin: 
   - 요청 보냈을 때 채팅이 url상에 노출되는 점과 채팅에 특수문자가 있는 경우 데이터가 손상되는 점
   - REST단에서 채팅에 대한 OpenAi의 답변을 받고 이를 데이터베이스에 INSERT처리를 하는 점을 고려해 POST방식으로 명시해 줍니다.
-  - 사용자의 채팅를 POST방식으로 비동기 요청을 날립니다.
+  - 사용자의 채팅를 POST방식으로 비동기 요청을 날립니다.  
 [chatbot.js 코드 확인](src/main/resources/static/js/chatbot/chatbot.js)
  
 ### 4.1.3. RestController
-
-![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_controller.png)
 
 - **요청 처리** :pushpin: [코드 확인](https://github.com/Integerous/goQuality/blob/b2c5e60761b6308f14eebe98ccdb1949de6c4b99/src/main/java/goQuality/integerous/controller/PostRestController.java#L55)
   - Controller에서는 요청을 화면단에서 넘어온 요청을 받고, Service 계층에 로직 처리를 위임합니다.
