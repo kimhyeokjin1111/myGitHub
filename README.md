@@ -99,14 +99,14 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
 - **Fetch 비동기 요청** :pushpin: 
   - 사용자의 채팅를 POST방식으로 비동기 요청을 날립니다.
   - (요청 보냈을 때 채팅이 url상에 노출되는 점과 채팅에 특수문자가 있는 경우 데이터가 손상되는 점  
-    REST단에서 채팅에 대한 OpenAi의 답변을 받고 이를 데이터베이스에 INSERT처리를 하는 점을 고려해 POST방식으로 명시해 줍니다.)
+    REST단에서 채팅에 대한 OpenAi의 답변을 받고 이를 데이터베이스에 INSERT처리를 하는 점을 고려해 POST방식으로 명시해주었습니다.)
     
 [chatbot.js 코드 확인](src/main/resources/static/js/chatbot/chatbot.js)
  
 ### 4.1.3. RestController
 
 - **요청 처리** :pushpin: 
-  - RestController에서는 화면단에서 넘어온 요청(채팅)을 받고, Service 계층에 로직 처리를 위임합니다.
+  - RestController에서는 화면단에서 넘어온 요청(채팅)을 받고, Service 계층에서 로직 처리를 넘깁니다.
 
 - **결과 응답** :pushpin: 
   - Service 계층에서 넘어온 로직 처리 결과(OpenAi의 답변)를 화면단에 응답해줍니다.
@@ -115,9 +115,7 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
 
 ### 4.1.4. Service
 
-![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_service1.png)
-
-- **Http 프로토콜 추가 및 trim()** :pushpin: [코드 확인]()
+- **OpenAi Api** :pushpin: [코드 확인]()
   - 사용자가 URL 입력 시 Http 프로토콜을 생략하거나 공백을 넣은 경우,  
   올바른 URL이 될 수 있도록 Http 프로토콜을 추가해주고, 공백을 제거해줍니다.
 
