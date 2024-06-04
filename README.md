@@ -90,10 +90,11 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
   </div>
 ```
 
-- **Fetch 비동기 요청** :pushpin: [코드 확인](src/main/resources/static/js/chatbot/chatbot.js)
+- **Fetch 비동기 요청** :pushpin: 
   - 요청 보냈을 때 채팅이 url상에 노출되는 점과 채팅에 특수문자가 있는 경우 데이터가 손상되는 점
-  - REST단에서 채팅에 대한 OpenAi의 답변을 받고 이를 데이터베이스에 INSERT처리를 하는 점을 고려해 POST방식으로 처리합니다. 
-  - 사용자의 채팅를 POST 요청을 비동기로 날립니다.
+  - REST단에서 채팅에 대한 OpenAi의 답변을 받고 이를 데이터베이스에 INSERT처리를 하는 점을 고려해 POST방식으로 매핑합니다. 
+  - 사용자의 채팅를 POST방식으로 비동기 요청을 날립니다.
+    [코드 확인](src/main/resources/static/js/chatbot/chatbot.js)
  
 ### 4.3. Controller
 
