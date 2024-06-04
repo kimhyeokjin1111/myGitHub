@@ -111,7 +111,7 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
 - **결과 응답** :pushpin: 
   - Service 계층에서 넘어온 로직 처리 결과(OpenAi의 답변)를 화면단에 응답해줍니다.
  
-[chatbotApi.java 코드 확인](src/main/java/com/example/hippobookproject/api/chatbot/ChatbotApi.java)
+[ChatbotApi.java 코드 확인](src/main/java/com/example/hippobookproject/api/chatbot/ChatbotApi.java)
 
 ### 4.1.4. Service
 
@@ -124,8 +124,9 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
   - 공식사이트에 명시된대로 POST방식을 사용해주고 response 1개의 값을 리턴받기 위해 bodyToMono로 사용하였습니다.
 
 - **채팅 내역 저장하기** :pushpin: 
-  - 사용자 채팅과 api통신의 response의 컨텐츠에 접근하여 답변을 데이터베이스단에 전달합니다.
+  - 사용자 채팅과 api통신의 response의 컨텐츠에 접근하여 답변을 데이터베이스단에 전달합니다.  
 
+[ChatbotService.java 코드 확인](src/main/java/com/example/hippobookproject/service/chatbot/ChatbotService.java)
 
 ### 4.1.5. Repository
 
