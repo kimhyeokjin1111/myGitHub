@@ -84,13 +84,14 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
 
 ### 4.1.2. 사용자 요청
 
-- **Session "userId" 체크** :pushpin: [코드 확인](src/main/resources/templates/chatbot/chatbot.html)
+- **Session "userId" 체크** :pushpin: 
   - 화면단에서 th:if를 이용해 session.userId이 null인지 확인합니다.
   - null이라면 모달버튼을 생성하지 않습니다.
 ```html
 <div th:fragment="chatbot-box" class="chatbot-icon-box" th:if="${session.userId != null}">
   </div>
 ```
+[chatbot.html 코드 확인](src/main/resources/templates/chatbot/chatbot.html)
 
 - **Fetch 비동기 요청** :pushpin: 
   - 요청 보냈을 때 채팅이 url상에 노출되는 점과 채팅에 특수문자가 있는 경우 데이터가 손상되는 점
