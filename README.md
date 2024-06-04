@@ -83,17 +83,18 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
 ### 4.2. 사용자 요청
 ![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_vue.png)
 
-- **userId Session 체크** :pushpin: [코드 확인](https://github.com/Integerous/goQuality/blob/b587bbff4dce02e3bec4f4787151a9b6fa326319/frontend/src/components/PostInput.vue#L67)
-  - chatbot.js에서 화면단에 존재하는 type="hidden" input의 데이터 속성 "userid"를 확인합니다.
+- **Session "userId" 체크** :pushpin: [코드 확인]()
+  - 화면단에서 th:if를 이용해 session.userId이 null인지 확인합니다.
+  - null이라면 모달버튼을 생성하지 않습니다.
 ```html
 <div th:fragment="chatbot-box" class="chatbot-icon-box" th:if="${session.userId != null}">
-
   </div>
 ```
-  - user
 
 - **Fetch 비동기 요청** :pushpin: [코드 확인]()
-  - 사용자의 메세지를  POST 요청을 비동기로 날립니다.
+  - 요청 보냈을 때 채팅이 url 노출되는 점과 채팅에 특수문자가 있는 경우 데이터가 손상되는 점
+  - REST단에서 채팅에 대한 OpenAi의 답변을 받고 이를 데이터베이스에 INSERT처리를 하는 점을 고려해 POST방식으로 처리합니다. 
+  - 사용자의 채팅를 POST 요청을 비동기로 날립니다.
  
 ### 4.3. Controller
 
