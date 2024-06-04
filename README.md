@@ -85,11 +85,11 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
 
 - **userId Session 체크** :pushpin: [코드 확인](https://github.com/Integerous/goQuality/blob/b587bbff4dce02e3bec4f4787151a9b6fa326319/frontend/src/components/PostInput.vue#L67)
   - chatbot.js에서 화면단에 존재하는 type="hidden" input의 데이터 속성 "userid"를 확인합니다.
-    ```python
+    ```html
 <div th:replace="~{/chatbot/chatbot :: chatbot-box}">
   </div>
 ```
-```python
+```html
 <div th:fragment="chatbot-box" class="chatbot-icon-box" th:if="${session.userId != null}">
   ....
   </div>
