@@ -83,12 +83,21 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
 ### 4.2. 사용자 요청
 ![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_vue.png)
 
-- **URL 정규식 체크** :pushpin: [코드 확인](https://github.com/Integerous/goQuality/blob/b587bbff4dce02e3bec4f4787151a9b6fa326319/frontend/src/components/PostInput.vue#L67)
-  - Vue.js로 렌더링된 화면단에서, 사용자가 등록을 시도한 URL의 모양새를 정규식으로 확인합니다.
-  - URL의 모양새가 아닌 경우, 에러 메세지를 띄웁니다.
+- **userId Session 체크** :pushpin: [코드 확인](https://github.com/Integerous/goQuality/blob/b587bbff4dce02e3bec4f4787151a9b6fa326319/frontend/src/components/PostInput.vue#L67)
+  - chatbot.js에서 화면단에 존재하는 type="hidden" input의 데이터 속성 "userid"를 확인합니다.
+    ```python
+<div th:replace="~{/chatbot/chatbot :: chatbot-box}">
+  </div>
+```
+```python
+<div th:fragment="chatbot-box" class="chatbot-icon-box" th:if="${session.userId != null}">
+  ....
+  </div>
+```
+  - user
 
-- **Axios 비동기 요청** :pushpin: [코드 확인]()
-  - URL의 모양새인 경우, 컨텐츠를 등록하는 POST 요청을 비동기로 날립니다.
+- **Fetch 비동기 요청** :pushpin: [코드 확인]()
+  - 사용자의 메세지를  POST 요청을 비동기로 날립니다.
  
 ### 4.3. Controller
 
