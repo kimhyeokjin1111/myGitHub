@@ -101,11 +101,11 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
  
 ### 4.1.3. RestController
 
-- **요청 처리** :pushpin: [코드 확인](https://github.com/Integerous/goQuality/blob/b2c5e60761b6308f14eebe98ccdb1949de6c4b99/src/main/java/goQuality/integerous/controller/PostRestController.java#L55)
-  - Controller에서는 요청을 화면단에서 넘어온 요청을 받고, Service 계층에 로직 처리를 위임합니다.
+- **요청 처리** :pushpin: [chatbotApi.java 코드 확인](src/main/java/com/example/hippobookproject/api/chatbot/ChatbotApi.java)
+  - RestController에서는 화면단에서 넘어온 요청(채팅)을 받고, Service 계층에 로직 처리를 위임합니다.
 
 - **결과 응답** :pushpin: [코드 확인]()
-  - Service 계층에서 넘어온 로직 처리 결과(메세지)를 화면단에 응답해줍니다.
+  - Service 계층에서 넘어온 로직 처리 결과(OpenAi의 답변)를 화면단에 응답해줍니다.
 
 ### 4.1.4. Service
 
