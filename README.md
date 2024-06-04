@@ -99,11 +99,13 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
  
 ### 4.1.3. RestController
 
-- **요청 처리** :pushpin: [chatbotApi.java 코드 확인](src/main/java/com/example/hippobookproject/api/chatbot/ChatbotApi.java)
+- **요청 처리** :pushpin: 
   - RestController에서는 화면단에서 넘어온 요청(채팅)을 받고, Service 계층에 로직 처리를 위임합니다.
 
-- **결과 응답** :pushpin: [코드 확인]()
+- **결과 응답** :pushpin: 
   - Service 계층에서 넘어온 로직 처리 결과(OpenAi의 답변)를 화면단에 응답해줍니다.
+ 
+[chatbotApi.java 코드 확인](src/main/java/com/example/hippobookproject/api/chatbot/ChatbotApi.java)
 
 ### 4.1.4. Service
 
