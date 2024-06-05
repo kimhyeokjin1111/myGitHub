@@ -143,5 +143,6 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
   - 사용자 검색 페이지
   ![Honeycam 2024-06-05 12-00-54](https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/c3528db8-5362-481c-a04b-0791cd5dde28)
   - 사이트 방문수 차트 페이지
+  ![Honeycam 2024-06-05 12-10-05](https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/1d11899c-38ec-4010-b640-373a32759504)
   - 신고 컨텐츠 처리 페이지
   - 팔로우 수 달성 스티커 승인 페이지
