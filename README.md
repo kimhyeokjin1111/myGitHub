@@ -150,7 +150,7 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
  
 - **도서 페이지**
   - 도서 검색 페이지
-  ![Honeycam 2024-06-05 12-00-54](https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/c3528db8-5362-481c-a04b-0791cd5dde28)
+  ![GIF 2024-06-10 오전 8-51-17](https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/a42c8ef9-cadc-4129-8a92-60f9f20eee19)
   - 도서 정보 페이지
   ![Honeycam 2024-06-05 12-10-05](https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/1d11899c-38ec-4010-b640-373a32759504)
 
