@@ -147,17 +147,17 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
   - 신고 컨텐츠 처리 페이지
   ![GIF 2024-06-07 오후 12-28-22](https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/36d0c89d-f1d2-4543-92c5-8bdd44a4e33a)
   - 팔로우 수 달성 스티커 승인 페이지
-
+  
  
 - **도서 페이지**
   - 도서 검색 페이지
   ![GIF 2024-06-10 오전 8-51-17](https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/a42c8ef9-cadc-4129-8a92-60f9f20eee19)
   - 도서 정보 페이지
   ![GIF 2024-06-10 오전 8-56-55](https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/619c538c-ab4f-4c1a-828c-ae3e64b450e6)
-
+  
 
 - **게시판 페이지**
   - 게시글 메인 페이지
-  ![Honeycam 2024-06-05 12-00-54](https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/c3528db8-5362-481c-a04b-0791cd5dde28)
+![GIF 2024-06-10 오전 9-01-17](https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/1b51b26d-e476-4608-a7ce-8933c243c687)
   - 게시글 뷰 페이지
-  ![Honeycam 2024-06-05 12-10-05](https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/1d11899c-38ec-4010-b640-373a32759504)
+![GIF 2024-06-10 오전 9-05-30](https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/6f59afff-5bc2-4987-83e3-b458559216f2)
