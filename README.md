@@ -67,8 +67,10 @@
 </br>
 
 ## 3. ERD 설계
-<p align="center">
-  <img src="https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/78f131bf-120d-4d00-aa66-f7e50a39f6b0">
+<p align="center">  
+  
+  ![ddl](https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/2aadb451-ce7d-41f3-9d20-cfaa95442b8e)
+  
 </p>
 
 ## 4. 핵심 기능
@@ -147,7 +149,7 @@ OpenAi API를 활용하여 Client의 요청(질문)에 대해 응답해줍니다
   - 신고 컨텐츠 처리 페이지
   ![GIF 2024-06-07 오후 12-28-22](https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/36d0c89d-f1d2-4543-92c5-8bdd44a4e33a)
   - 팔로우 수 달성 스티커 승인 페이지
-  ![스크린샷 2024-05-30 202601](https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/7933a4b2-5171-456a-8277-af42577e14ca)
+  ![GIF 2024-06-11 오전 2-24-27](https://github.com/kimhyeokjin1111/myGitHub/assets/159498606/65e2b991-9cbe-4c4a-82b3-322c5368cffe)
  
 - **도서 페이지**
   - 도서 검색 페이지
